@@ -1,0 +1,27 @@
+{% extends 'trans/base.html' %}
+
+{% block content %}
+<div class = "col-sm-1">
+</div>
+<div class = "col-sm-5">
+	<h2>Original Text</h2>
+	{{english_text}}
+	<br><hr>
+	<h2>Google Translation</h2>
+	{{google_res}}
+	<br><hr>
+</div>
+<div class = "col-sm-5">
+	<h2>Systran Translation</h2>
+	{{systran_res}}
+	<br><hr>
+	<h2>Microsoft Translation</h2>
+	{{microsoft_res}}
+	<br><hr>
+	<h2>IBM Translation</h2>
+	{{ibm_res}}
+</div>
+<div class = "col-sm-1">
+</div>
+{% endblock %}
+~              

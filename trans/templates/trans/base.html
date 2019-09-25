@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+    <head>
+        <title>Translators Work Bench</title>
+	 <meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+    <div class="page-header">
+        <a href="{% url 'post_trans' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+
+	<center><h1><a href="/">Translators Work Bench</a></h1></center>
+    </div>
+    <!-- <div class="content container"> -->
+    <div class="container-fluid">
+        <div class="row">
+		<!-- <div class="col-md-8"> -->
+            {% block content %}
+            {% endblock %}
+	    <!-- </div> -->
+        </div>
+    </div>
+    </body>
+</html>
